@@ -32,9 +32,128 @@
 
     <!-- color scheme -->
     <link rel="stylesheet" href="css/color.css" type="text/css" id="colors">
+    <style>
+    /* codingan prokes */
+    #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #myImg:hover {
+        opacity: 0.7;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 99999;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content,
+    #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+    }
+
+    /* codingan prokes */
+    </style>
 </head>
 
 <body id="homepage">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
 
     <div id="wrapper">
 
@@ -51,15 +170,15 @@
                                 <h2>Fenny<span>&amp;</span>Kris</h2>
                             </a>
                         </div>
-                                               
+
                         <span id="menu-btn"></span>
                         <!-- small button close -->
 
                         <span class="btn-rsvp">RSVP</span>
 
 
+                    </div>
                 </div>
-            </div>
         </header>
         <!-- header close -->
 
@@ -69,8 +188,8 @@
             <!-- rsvp popup begin -->
             <div id="popup-box" class="full-height">
                 <span class="btn-close">
-					<i class="icon_close"></i>
-				</span>
+                    <i class="icon_close"></i>
+                </span>
 
                 <div class="container center-y">
                     <div class="row">
@@ -95,10 +214,12 @@
 
                         <form name="rsvp" id='rsvp_form' class="form-underline" method="post" action="rsvp.php">
                             <div class="col-md-3">
-                                <input type='text' name='Name' id='name' class="form-control" placeholder="Your Name" required maxlength="50">
+                                <input type='text' name='Name' id='name' class="form-control" placeholder="Your Name"
+                                    required maxlength="50">
                             </div>
                             <div class="col-md-3">
-                                <input type='text' name='Email' id='email' class="form-control" placeholder="Your Email" required maxlength="50">
+                                <input type='text' name='Email' id='email' class="form-control" placeholder="Your Email"
+                                    required maxlength="50">
                             </div>
                             <div class="col-md-3">
                                 <select id="guest" name="Guest" size="1" class="form-control">
@@ -121,7 +242,8 @@
                                 <div class="spacer-single"></div>
                                 <input type='submit' id='submit' value='Submit' class="btn btn-custom">
                                 <div id='mail_success' class='success'>Your message has been sent successfully.</div>
-                                <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
+                                <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.
+                                </div>
                             </div>
                         </form>
                         <div id="success_message">
@@ -139,7 +261,8 @@
             <!-- rsvp popup close -->
 
             <!-- section begin -->
-            <section id="section-hero" class="full-height relative z1 owl-slide-wrapper no-top no-bottom text-light" data-stellar-background-ratio=".2">
+            <section id="section-hero" class="full-height relative z1 owl-slide-wrapper no-top no-bottom text-light"
+                data-stellar-background-ratio=".2">
                 <div class="owl-slider-nav">
                     <div class="next"></div>
                     <div class="prev"></div>
@@ -187,12 +310,14 @@
                     <div class="row">
 
                         <div class="col-md-5 col-md-offset-1 text-center">
-                            <img src="images/misc/Kris-1.jpg" alt="" class="img-responsive img-rounded wow fadeInLeft" data-wow-delay=".2s" />
+                            <img src="images/misc/Kris-1.jpg" alt="" class="img-responsive img-rounded wow fadeInLeft"
+                                data-wow-delay=".2s" />
                             <div class="padding40">
                                 <h3>Krismana Septia D.P</h3>
                                 <p>Putra dari
-                                <br>Bapak Keman dan Ibu Reni Prasetyaningsih
-                                <br>Adimulya, Wanareja</p>
+                                    <br>Bapak Keman dan Ibu Reni Prasetyaningsih
+                                    <br>Adimulya, Wanareja
+                                </p>
                                 <!-- social icons -->
                                 <div class="social-icons-sm">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -206,7 +331,8 @@
                         </div>
 
                         <div class="col-md-5 text-center">
-                            <img src="images/misc/Feni-1.jpg" alt="" class="img-responsive img-rounded wow fadeInRight" data-wow-delay=".2s" />
+                            <img src="images/misc/Feni-1.jpg" alt="" class="img-responsive img-rounded wow fadeInRight"
+                                data-wow-delay=".2s" />
                             <div class="padding40">
                                 <h3>Ruth Fenny Wijaya</h3>
                                 <p>Putri dari
@@ -227,8 +353,8 @@
 
                         <div class="col-md-2 col-md-offset-5 text-center absolute">
                             <span class="circle wow zoomIn" data-wow-delay=".8s">
-								<i class="fa fa-heart"></i>
-							</span>
+                                <i class="fa fa-heart"></i>
+                            </span>
                         </div>
 
 
@@ -240,12 +366,14 @@
             <!-- section close -->
 
             <!-- section begin -->
-            <section id="section-quote" aria-label="section-quote-1" class="text-light" data-stellar-background-ratio=".2">
+            <section id="section-quote" aria-label="section-quote-1" class="text-light"
+                data-stellar-background-ratio=".2">
                 <div class="container">
                     <div class="row wow fadeInUp">
                         <div class="col-md-8 col-md-offset-2">
                             <blockquote class="very-big text-light wow fadeIn">
-                                "Sebab itu seorang laki-laki akan meninggalkan ayahnya dan ibunya dan bersatu dengan istrinya, sehingga keduanya menjadi satu daging."
+                                "Sebab itu seorang laki-laki akan meninggalkan ayahnya dan ibunya dan bersatu dengan
+                                istrinya, sehingga keduanya menjadi satu daging."
                                 <span>Kejadian 2 : 24</span>
                             </blockquote>
                         </div>
@@ -318,142 +446,176 @@
                             <div class="spacer-single"></div>
                         </div>
 
-                           
-                        </div>
-
 
                     </div>
+
+
                 </div>
-            </section>
-            <!-- section close -->
+        </div>
+        </section>
+        <!-- section close -->
 
-            <section id="section-gallery">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h2>Our Gallery</h2>
-                            </div>
+        <section id="section-gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Our Gallery</h2>
+                    </div>
 
-                        <div class="col-md-12">
-                            <div class="de_tab tab_style_3 text-center">
-                                
+                    <div class="col-md-12">
+                        <div class="de_tab tab_style_3 text-center">
 
-                               
-                                        <div class="row">
 
-                                            <div class="col-md-4 text-center mb10">
-                                                <figure class="picframe img-rounded mb20">
-                                                    <a class="image-popup" href="images/gallery/category-1/1.jpg">
-														<span class="overlay-v">
-															<i></i>
-														</span>
-													</a>
-                                                    <img src="images/gallery/category-1/1.jpg" class="img-responsive img-rounded" alt="">
-                                                </figure>
-                                            </div>
 
-                                            <div class="col-md-4 text-center mb10">
-                                                <figure class="picframe img-rounded mb20">
-                                                    <a class="image-popup" href="images/gallery/category-1/2.jpg">
-														<span class="overlay-v">
-															<i></i>
-														</span>
-													</a>
-                                                    <img src="images/gallery/category-1/2.jpg" class="img-responsive img-rounded" alt="">
-                                                </figure>
-                                            </div>
+                            <div class="row">
 
-                                            <div class="col-md-4 text-center mb10">
-                                                <figure class="picframe img-rounded mb20">
-                                                    <a class="image-popup" href="images/gallery/category-1/3.jpg">
-														<span class="overlay-v">
-															<i></i>
-														</span>
-													</a>
-                                                    <img src="images/gallery/category-1/3.jpg" class="img-responsive img-rounded" alt="">
-                                                </figure>
-                                            </div>
-                                            </div>  
-                                            <div class="row">
-                                            <div class="col-md-4 text-center mb10">
-                                                <figure class="picframe img-rounded mb20">
-                                                    <a class="image-popup" href="images/gallery/category-1/4.jpg">
-														<span class="overlay-v">
-															<i></i>
-														</span>
-													</a>
-                                                    <img src="images/gallery/category-1/4.jpg" class="img-responsive img-rounded" alt="">
-                                                </figure>
-                                            </div>
-
-                                            <div class="col-md-4 text-center mb10">
-                                                <figure class="picframe img-rounded mb20">
-                                                    <a class="image-popup" href="images/gallery/category-1/5.jpg">
-														<span class="overlay-v">
-															<i></i>
-														</span>
-													</a>
-                                                    <img src="images/gallery/category-1/5.jpg" class="img-responsive img-rounded" alt="">
-                                                </figure>
-                                            </div>
-
-                                            <div class="col-md-4 text-center mb10">
-                                                <figure class="picframe img-rounded mb20">
-                                                    <a class="image-popup" href="images/gallery/category-1/6.jpg">
-														<span class="overlay-v">
-															<i></i>
-														</span>
-													</a>
-                                                    <img src="images/gallery/category-1/6.jpg" class="img-responsive img-rounded" alt="">
-                                                </figure>
-                                            </div>
-</div>
-
-                                     
-                                 
-
+                                <div class="col-md-4 text-center mb10">
+                                    <figure class="picframe img-rounded mb20">
+                                        <a class="image-popup" href="images/gallery/category-1/1.jpg">
+                                            <span class="overlay-v">
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                        <img src="images/gallery/category-1/1.jpg" class="img-responsive img-rounded"
+                                            alt="">
+                                    </figure>
                                 </div>
 
+                                <div class="col-md-4 text-center mb10">
+                                    <figure class="picframe img-rounded mb20">
+                                        <a class="image-popup" href="images/gallery/category-1/2.jpg">
+                                            <span class="overlay-v">
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                        <img src="images/gallery/category-1/2.jpg" class="img-responsive img-rounded"
+                                            alt="">
+                                    </figure>
+                                </div>
+
+                                <div class="col-md-4 text-center mb10">
+                                    <figure class="picframe img-rounded mb20">
+                                        <a class="image-popup" href="images/gallery/category-1/3.jpg">
+                                            <span class="overlay-v">
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                        <img src="images/gallery/category-1/3.jpg" class="img-responsive img-rounded"
+                                            alt="">
+                                    </figure>
+                                </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-4 text-center mb10">
+                                    <figure class="picframe img-rounded mb20">
+                                        <a class="image-popup" href="images/gallery/category-1/4.jpg">
+                                            <span class="overlay-v">
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                        <img src="images/gallery/category-1/4.jpg" class="img-responsive img-rounded"
+                                            alt="">
+                                    </figure>
+                                </div>
+
+                                <div class="col-md-4 text-center mb10">
+                                    <figure class="picframe img-rounded mb20">
+                                        <a class="image-popup" href="images/gallery/category-1/5.jpg">
+                                            <span class="overlay-v">
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                        <img src="images/gallery/category-1/5.jpg" class="img-responsive img-rounded"
+                                            alt="">
+                                    </figure>
+                                </div>
+
+                                <div class="col-md-4 text-center mb10">
+                                    <figure class="picframe img-rounded mb20">
+                                        <a class="image-popup" href="images/gallery/category-1/6.jpg">
+                                            <span class="overlay-v">
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                        <img src="images/gallery/category-1/6.jpg" class="img-responsive img-rounded"
+                                            alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+
+
+
                         </div>
+
                     </div>
                 </div>
-            </section>
+            </div>
+    </div>
+    </section>
 
+    </div>
+    <!-- content close -->
+
+    <!-- footer begin -->
+    <footer>
+        <div class="container text-center text-light">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="hs1 wow fadeInUp">Feni<span>&amp;</span>Kris</h2>
+                </div>
+            </div>
         </div>
-        <!-- content close -->
 
-        <!-- footer begin -->
-        <footer>
-            <div class="container text-center text-light">
+        <div class="subfooter">
+            <div class="container text-center">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="hs1 wow fadeInUp">Feni<span>&amp;</span>Kris</h2>
+                        &copy; Uleman Online by Talenta Sarana Abadi
                     </div>
                 </div>
             </div>
-
-            <div class="subfooter">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-md-12">
-                            &copy; Uleman Online by Talenta Sarana Abadi
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer close -->
-
-        <a href="#" id="back-to-top"></a>
-        <div id="preloader">
-            <div class="preloader1"></div>
         </div>
+    </footer>
+    <!-- footer close -->
+
+    <a href="#" id="back-to-top"></a>
+    <div id="preloader">
+        <div class="preloader1"></div>
     </div>
-	
+    </div>
+
     <audio autoplay="autoplay" loop="loop">
-		<source src="music/musik.mp3" type="audio/mp3"/>
-	</audio>
+        <source src="music/musik.mp3" type="audio/mp3" />
+    </audio>
+
+    <img id="myImg" src="images/prokes.jpg" style="width:100%;max-width:300px;display:none;">
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    }
+    img.onload = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    </script>
 
     <!-- Javascript Files
     ================================================== -->
