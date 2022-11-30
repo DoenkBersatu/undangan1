@@ -554,6 +554,62 @@
     </div>
     </section>
 
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="deco id-color"><span>&</span></h2>
+                    <h2>Wedding Gift</h2>
+                    <div class="text-center">
+                        Terima kasih Anda telah berkenan mengirimkan hadiah untuk pernikahan kami. Hadiah dapat
+                        dikirimkan melalui transfer bank ke rekening di bawah ini:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container mx-auto" style="width:80%;">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-ms-12 col-xs-12"
+                                style="border:solid 1px grey;padding: 20px;border-radius:8px;">
+                                <div class="card text-center p-3">
+                                    <div class="card-header">
+                                        Bank BCA
+                                    </div>
+                                    <div class="card-body text-center">
+                                        A/N Angga Satria <br>
+                                        09389283
+
+                                        <button class="btn btn-warning">
+                                            <i class="fa fa-copy"></i>
+                                            Salin No Rekening
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-ms-12 col-xs-12"
+                                style="border:solid 1px grey;padding: 20px;border-radius:8px;">
+                                <div class="card text-center p-3">
+                                    <div class="card-header">
+                                        Alamat
+                                    </div>
+                                    <div class="card-body text-center">
+                                        Jalan Perintis No.12 RT 04 RW 05, Dusun Cikalong, Desa Sidareja, Kecamatan
+                                        Sidareja, Cilacap
+
+                                        <button class="btn btn-warning">
+                                            <i class="fa fa-copy"></i>
+                                            Salin Alamat
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
     </div>
     <!-- content close -->
 
