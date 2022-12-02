@@ -445,12 +445,12 @@
                 <div class="container relative">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h2>Guest Book</h2>
+                            <h2>Countdown Time</h2>
                             <div class="spacer-single"></div>
                         </div>
-                        <div class="col-md-12 text-center">
+                        <!-- <div class="col-md-12 text-center">
                             <h2 class="deco"><span class="id-color">Time Left Until Event</span></h2>
-                        </div>
+                        </div> -->
                         <div class="col-md-8 col-md-offset-2">
                             <div class="spacer-double"></div>
                             <div id="defaultCountdown" class="wow fadeIn"></div>
