@@ -8,7 +8,7 @@
     <meta name="description" content="Lovus is responsive wedding html website template">
     <meta name="keywords" content="wedding,couple,ceremony,reception,rsvp,gallery,event,countdown">
     <meta name="author" content="">
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
     <!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
@@ -145,16 +145,17 @@
 
     /* codingan prokes */
 
-    .alert1{
-	
-	display: none;
-}
+    .alert1 {
 
-.alert2{
-	
-	display: none;
-}
-  /* codingan alert */
+        display: none;
+    }
+
+    .alert2 {
+
+        display: none;
+    }
+
+    /* codingan alert */
     </style>
 </head>
 
@@ -183,10 +184,10 @@
                             </a>
                         </div>
 
-                        <span id="menu-btn"></span>
+                        <!-- <span id="menu-btn"></span> -->
                         <!-- small button close -->
 
-                        <span class="btn-rsvp">RSVP</span>
+                        <!-- <span class="btn-rsvp">RSVP</span> -->
 
 
                     </div>
@@ -384,7 +385,8 @@
                     <div class="row wow fadeInUp">
                         <div class="col-md-8 col-md-offset-2">
                             <blockquote class="very-big text-light wow fadeIn">
-                                "Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia"
+                                "Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah
+                                dipersatukan Allah, tidak boleh diceraikan manusia"
                                 <span>Matius 19 : 6 </span>
                             </blockquote>
                         </div>
@@ -416,7 +418,8 @@
 
                         <div class="col-md-5 col-md-offset-1 pt40 pb40 wow fadeIn" data-wow-delay=".5s">
                             <h3>Pemberkatan Nikah</h3>
-                            Minggu, 18 Desember 2022<br> Pukul 10.30 WIB<br> GKJ Sidareja<br>Jl. Jend. Sudirman No. 181 Sidareja<br>
+                            Minggu, 18 Desember 2022<br> Pukul 10.30 WIB<br> GKJ Sidareja<br>Jl. Jend. Sudirman No. 181
+                            Sidareja<br>
                             <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.8162160958987!2d108.79088181469322!3d-7.485535594600419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6582772835d675%3A0x3b9dcbc7719d2315!2sGKJ%20Sidareja!5e0!3m2!1sid!2sid!4v1669946114254!5m2!1sid!2sid"
                                 class="btn btn-custom mt30 popup-gmaps">Lihat Map</a>
                         </div>
@@ -427,7 +430,8 @@
                     <div class="row">
                         <div class="col-md-5 pt40 pb40 text-right wow fadeIn" data-wow-delay=".5s">
                             <h3>Resepsi Pernikahan</h3>
-                            Minggu 18 Desember 2022<br> Pukul 09.00 WIB - Selesai<br> Rumah Mempelai Perempuan<br>Jl. Perintis No. 12 RT 04/05, Cikalong, Sidareja <br>
+                            Minggu 18 Desember 2022<br> Pukul 09.00 WIB - Selesai<br> Rumah Mempelai Perempuan<br>Jl.
+                            Perintis No. 12 RT 04/05, Cikalong, Sidareja <br>
                             <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.9562245349092!2d108.79745112918907!3d-7.484578499662549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e658271c35218ef%3A0x56da1490974c2de5!2sJl.%20Perintis%2010%2C%20Sidareja%2C%20Kec.%20Sidareja%2C%20Kabupaten%20Cilacap%2C%20Jawa%20Tengah%2053261!5e0!3m2!1sid!2sid!4v1669946446381!5m2!1sid!2sid"
                                 class="btn btn-custom mt30 popup-gmaps">Lihat Map</a>
                         </div>
@@ -466,7 +470,7 @@
         </section>
         <!-- section close -->
 
-        <section id="section-gallery">
+        <section id="section-gallery" style="padding-bottom:20px;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -559,7 +563,7 @@
             </div>
     </div>
     </section>
-    <section>
+    <section style="padding-top:20px;padding-bottom:40px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -568,7 +572,7 @@
                     <div class="text-center">
                         Terima kasih Anda telah berkenan mengirimkan hadiah untuk pernikahan kami. Hadiah dapat
                         dikirimkan melalui transfer bank ke rekening di bawah ini:
-                       <p></p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="row">
@@ -581,11 +585,12 @@
                                         Bank BRI
                                     </div>
                                     <div class="card-body text-center">
-                                        A/N Ruth Fenny Wijaya 
+                                        A/N Ruth Fenny Wijaya
                                         <h4 id="text1"><b>067901006050509</b></h4>
-<br>
-<button class="copyButton btn btn-warning" id="copyButton1"><i class="fa fa-copy"></i> Salin No Rekening</button>
-<!-- <button onclick='CopyNorek()' class="btn btn-warning">
+                                        <br>
+                                        <button class="copyButton btn btn-warning" id="copyButton1"><i
+                                                class="fa fa-copy"></i> Salin No Rekening</button>
+                                        <!-- <button onclick='CopyNorek()' class="btn btn-warning">
                                             <i class="fa fa-copy"></i>
                                             Salin No Rekening
                                         </button> -->
@@ -601,9 +606,11 @@
                                         Alamat
                                     </div>
                                     <div class="card-body text-center">
-                                    <p id="text2">Jalan Perintis No.12 RT 04 RW 05, Dusun Cikalong, Desa Sidareja, Kecamatan
-                                        Sidareja, Cilacap</p> 
-                                        <button class="copyButton btn btn-warning" id="copyButton2"><i class="fa fa-copy"></i> Salin Alamat</button>
+                                        <p id="text2">Jalan Perintis No.12 RT 04 RW 05, Dusun Cikalong, Desa Sidareja,
+                                            Kecamatan
+                                            Sidareja, Cilacap</p>
+                                        <button class="copyButton btn btn-warning" id="copyButton2"><i
+                                                class="fa fa-copy"></i> Salin Alamat</button>
                                         <span class="alert2">Berhasil di Copy</span>
                                     </div>
                                 </div>
@@ -613,6 +620,25 @@
                 </div>
             </div>
         </div>
+        </div>
+    </section>
+    <section style="padding-top:20px;padding-bottom:20px;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="deco id-color"><span>&</span></h2>
+                    <h2>Pesan</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <iframe src="http://localhost/pesan/pesanadd.php" frameborder="0" width="100%" height="800px"
+                        style="border:none;padding:20px;" scrolling="no" frameborder="0"
+                        allowtransparency="true"></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -699,35 +725,35 @@
     <script src="rsvp/form.js"></script>
     <script>
     function copy() {
-        document.querySelector("067901006050509").select(),document.execCommand('CopyNorek');
+        document.querySelector("067901006050509").select(), document.execCommand('CopyNorek');
     }
-</script>
+    </script>
 
-<script>
-		function copy(copyId){
-			var $inp=$("<input>");
-			$("body").append($inp);
-			$inp.val($(""+copyId).text()).select();
-			document.execCommand("copy");
-			$inp.remove();
-			
-		}
-		$(document).ready(function(){
-			$("#copyButton1").click(function(){
-				copy('#text1');
-                $(".alert1").fadeIn(500,function(){
-				$(".alert1").fadeOut();
-			});
-			});
-					});
-                    $("#copyButton2").click(function(){
-				copy('#text2');
-                
-            $(".alert2").fadeIn(500,function(){
-				$(".alert2").fadeOut();
-			});
-			});
-                    </script>
+    <script>
+    function copy(copyId) {
+        var $inp = $("<input>");
+        $("body").append($inp);
+        $inp.val($("" + copyId).text()).select();
+        document.execCommand("copy");
+        $inp.remove();
+
+    }
+    $(document).ready(function() {
+        $("#copyButton1").click(function() {
+            copy('#text1');
+            $(".alert1").fadeIn(500, function() {
+                $(".alert1").fadeOut();
+            });
+        });
+    });
+    $("#copyButton2").click(function() {
+        copy('#text2');
+
+        $(".alert2").fadeIn(500, function() {
+            $(".alert2").fadeOut();
+        });
+    });
+    </script>
 </body>
 
 </html>
