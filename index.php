@@ -8,7 +8,7 @@
     <meta name="description" content="Lovus is responsive wedding html website template">
     <meta name="keywords" content="wedding,couple,ceremony,reception,rsvp,gallery,event,countdown">
     <meta name="author" content="">
-
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
     <!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
@@ -553,18 +553,12 @@
                                     </figure>
                                 </div>
                             </div>
-
-
-
-
                         </div>
-
                     </div>
                 </div>
             </div>
     </div>
     </section>
-
     <section>
         <div class="container">
             <div class="row">
