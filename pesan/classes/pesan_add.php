@@ -1219,10 +1219,11 @@ class pesan_add extends pesan
 	function Page_DataRendered(&$footer) {
 
 		// Example:
-		//$footer = "your footer";
-
-		$d = ExecuteRows("select * from pesan");
-		echo '<div style="height: 530px; overflow-y: scroll;">';
+		include "../koneksi.php";
+		$d = mysqli_query($koneksi, "select * from pesan order by id_pesan desc");
+		$cek = mysqli_num_rows($d);
+		if ($cek > 0) {
+			echo '<div style="height: 530px; overflow-y: scroll;">';
 		foreach ($d as $a) {
 			echo '
 			<div class="card ew-card border-secondary mb-3" style="width:100%">
@@ -1250,6 +1251,7 @@ class pesan_add extends pesan
 			</div>';
 		}
 		echo "</div>";
+		} else {}
 	}
 
 	// Form Custom Validate event
