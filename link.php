@@ -22,7 +22,7 @@ $kepada = $_POST['kepada'];
             <h2 class="text-center">Generator Link</h2>
             <p>Sukses Membuat link, copy link dibawah ini</p>
               <div class="card">
-                <input type="text" id="text" value="http://localhost/HTML/undangan.php?to=<?php echo str_replace(" ","+",$kepada);?>">
+                <input type="text" id="text" value="https://localhost/HTML/undangan.php?to=<?php echo str_replace(" ","+",$kepada);?>">
               
             </div>
             <br>
