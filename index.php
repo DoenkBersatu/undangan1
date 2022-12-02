@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Fenny - Kris</title>
+    <title>The Wedding of Fenny & Kris</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lovus is responsive wedding html website template">
     <meta name="keywords" content="wedding,couple,ceremony,reception,rsvp,gallery,event,countdown">
